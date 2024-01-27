@@ -1,0 +1,15 @@
+.user-details{
+    gap: 1.5rem;
+
+}
+
+.user-details .user-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.user-details .user-actions.clean-list{
+    gap: 1rem;
+}
+
