@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { contactService } from "../services/item.service.local";
 import SvgIcon from "./SvgIcon";
 
 const UseDetails = () => {
@@ -11,11 +12,14 @@ const UseDetails = () => {
     console.log("useDetails useEffect", user);
   }, [user]);
 
-  window.addEventListener("message", (e) => {
-    console.log("e");
-    setUser(e.data.payload);
+  window.addEventListener("message", (ev) => {
+    getContactById(ev.data.payload.userId);
   });
 
+  async function getContactById(contactId) {
+    const user = await contactService.getById(contactId);
+    setUser(user);
+  }
   const userActions = [
     { title: "Dashboard", action: "", icon: "dashBoard" },
     { title: "Dates", action: "", icon: "calender" },

@@ -1,0 +1,106 @@
+
+[
+    {
+        "_id": "user1",
+        "phoneNumber": "1234567890",
+        "note": "This is user 1",
+        "imgUrl":"https://xsgames.co/randomusers/assets/avatars/male/65.jpg",
+        "location": {
+            "name":"New York",
+            "lat": "40.7128",
+            "lng": "-74.0060"
+        },
+        "emailAddress": "user1@example.com",
+        "importantDates": [
+            {
+                "date": "2022-01-01",
+                "event": "Birthday"
+            },
+            {
+                "date": "2022-07-04",
+                "event": "Anniversary"
+            }
+        ]
+    },
+    {
+        "_id": "user2",
+        "phoneNumber": "9876543210",
+        "note": "This is user 2",
+        "imgUrl":"https://xsgames.co/randomusers/assets/avatars/male/60.jpg",
+        "location": {
+            "name":"Los Angeles",
+            "lat": "34.0522",
+            "lng": "-118.2437"
+        },
+        "emailAddress": "user2@example.com",
+        "importantDates": [
+            {
+                "date": "2022-03-15",
+                "event": "Birthday"
+            },
+            {
+                "date": "2022-09-30",
+                "event": "Anniversary"
+            }
+        ]
+    },
+    {
+        "_id": "user3",
+        "phoneNumber": "5555555555",
+        "note": "This is user 3",
+        "imgUrl":"https://xsgames.co/randomusers/assets/avatars/male/46.jpg",
+        "location": {
+            "name":"London",
+            "lat": "51.5074",
+            "lng": "-0.1278"
+        },
+        "emailAddress": "user3@example.com",
+        "importantDates": [
+            {
+                "date": "2022-05-10",
+                "event": "Birthday"
+            },
+            {
+                "date": "2022-11-20",
+                "event": "Anniversary"
+            }
+        ]
+    },
+    {
+        "_id": "user4",
+        "phoneNumber": "9999999999",
+        "note": "This is user 4",
+        "imgUrl":"https://xsgames.co/randomusers/assets/avatars/female/56.jpg",
+        "location": {
+            "name":"Paris",
+            "lat": "48.8566",
+            "lng": "2.3522"
+        },
+        "emailAddress": "user4@example.com",
+        "importantDates": [
+            {
+                "date": "2022-06-25",
+                "event": "Birthday"
+            },
+            {
+                "date": "2022-12-31",
+                "event": "Anniversary"
+            }
+        ]
+    },
+    {
+        "_id": "user5",
+        "phoneNumber": "1111111111",
+        "note": "This is user 5",
+        "imgUrl":"https://xsgames.co/randomusers/assets/avatars/female/46.jpg",
+        "location": {
+            "name":"San Francisco",
+            "lat": "37.7749",
+            "lng": "-122.4194"
+        }
+    }
+]
+       
+
+
+
