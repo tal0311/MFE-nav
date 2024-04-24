@@ -1,6 +1,7 @@
 
 
 /* components */
+@import './cmps/dynamicCmp.css';
 @import './cmps/UserDetails.css';
 @import './App.css'
 

@@ -1,4 +1,4 @@
-import UseDetails from './cmps/UseDetails'
+import UserDetails from './cmps/UserDetails'
 
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
   return (
     <>
      <section className='nav-MFE'>
-      <UseDetails/>
+      <UserDetails/>
      </section>
     </>
   )

@@ -1,12 +1,15 @@
 import { useState, useEffect } from "react";
 import { contactService } from "../services/item.service.local";
-import SvgIcon from "./SvgIcon";
+import ActionPreview from './ActionPreview'
+
 
 const UseDetails = () => {
   const [user, setUser] = useState({
     username: "Guest",
     imgUrl: "https://xsgames.co/randomusers/assets/avatars/male/66.jpg",
   });
+
+//  console.log( import.meta.env)
 
   useEffect(() => {
     console.log("useDetails useEffect", user);
@@ -20,13 +23,15 @@ const UseDetails = () => {
     const user = await contactService.getById(contactId);
     setUser(user);
   }
+
+  
   const userActions = [
-    { title: "Dashboard", action: "", icon: "dashBoard" },
-    { title: "Dates", action: "", icon: "calender" },
-    { title: "Make a call", action: "", icon: "call" },
-    { title: "Location", action: "", icon: "location" },
-    { title: "Take a note", action: "", icon: "note" },
-    { title: "Send text message", action: "", icon: "chat" },
+    { title: "Dashboard", action: "dashboard", icon: "dashBoard" },
+    { title: "Dates", action: "dates", icon: "calender" },
+    { title: "Make a call", action: "call", icon: "call" },
+    { title: "Location", action: "location", icon: "location" },
+    { title: "Take a note", action: "note", icon: "note" },
+    { title: "Send text message", action: "msg", icon: "chat" },
   ];
   return (
     <article className="user-details grid grid-dir-row grid-center">
@@ -41,12 +46,11 @@ const UseDetails = () => {
         {userActions.map((action, idx) => {
           return (
             <li key={idx} className="grid grid-center">
-              <button className="reset-btn" title={action.title}>
-                <SvgIcon iconName={action.icon} />
-              </button>
+              <ActionPreview action={action} user={user}/>
             </li>
           );
         })}
+      
       </ul>
     </article>
   );
